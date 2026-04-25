@@ -35,7 +35,7 @@ Esto genera el archivo `css/output.css` automáticamente cada vez que guardas ca
 ```bash
 php -S localhost:8000
 ```
-En el navegador se abre con http://localhost:8000
+En el navegador se abre con http://localhost/...
 
 Desde el panel de XAMPP - Clonar el repositorio directo el C:\xampp\htdocs\...
 
