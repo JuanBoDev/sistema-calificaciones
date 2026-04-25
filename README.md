@@ -44,13 +44,16 @@ Dale Start a Apache
 Copia tu carpeta del proyecto dentro de C:\xampp\htdocs\
 Abre el navegador en http://localhost/sistema-calificaciones
 
-## 📁 Estructura inicial del proyecto
+## 📁 Estructura del proyecto
+
+\```
 sistema-calificaciones/
-├── index.php              ← archivo principal
+├── index.php               ← archivo principal
 ├── css/
-│   ├── input.css          ← entrada de Tailwind (no editar)
-│   └── output.css         ← CSS generado por Tailwind (no editar)
-├── package.json           ← dependencias del proyecto
-├── tailwind.config.js     ← configuración de Tailwind
-├── .gitignore             ← archivos que Git ignora
-└── README.md              ← este archivo
+│   ├── input.css           ← entrada de Tailwind (no editar)
+│   └── output.css          ← CSS generado por Tailwind (no editar)
+├── package.json            ← dependencias del proyecto
+├── tailwind.config.js      ← configuración de Tailwind
+├── .gitignore              ← archivos que Git ignora
+└── README.md               ← este archivo
+\```
