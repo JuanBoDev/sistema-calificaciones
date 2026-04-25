@@ -23,18 +23,12 @@ npm install
 
 ## ▶️ Cómo ejecutar el proyecto
 
-Necesitas **dos terminales abiertas al mismo tiempo** en VS Code:
-
 **Terminal 1 — Tailwind (mantener corriendo siempre)**
 ```bash
 npm run watch
 ```
 Esto genera el archivo `css/output.css` automáticamente cada vez que guardas cambios.
 
-**Terminal 2 — Servidor PHP**
-```bash
-php -S localhost:8000
-```
 En el navegador se abre con http://localhost/...
 
 Desde el panel de XAMPP - Clonar el repositorio directo el C:\xampp\htdocs\...
@@ -46,17 +40,19 @@ Abre el navegador en http://localhost/sistema-calificaciones
 
 ## 📁 Estructura del proyecto
 
-\```
 sistema-calificaciones/
-├── index.php               ← archivo principal
+├── index.php                  ← solo recibe el form y llama a los módulos
+├── modulos/
+│   ├── modulo1_registro.php   ← formulario HTML
+│   ├── modulo2_condicionales.php  ← lógica de promedios y escalas
+│   ├── modulo3_bucles.php     ← foreach, for, while, do...while
+│   ├── modulo4_flujo.php      ← funciones, break, continue, exit
+│   └── modulo5_reporte.php    ← HTML del reporte final
 ├── css/
-│   ├── input.css           ← entrada de Tailwind (no editar)
-│   └── output.css          ← CSS generado por Tailwind (no editar)
-├── package.json            ← dependencias del proyecto
-├── tailwind.config.js      ← configuración de Tailwind
-├── .gitignore              ← archivos que Git ignora
-└── README.md               ← este archivo
-\```
+│   ├── input.css
+│   └── output.css
+├── package.json
+└── tailwind.config.js
 
 Prompt para José (módulo 4 y 5):
 Estoy trabajando en un proyecto PHP universitario llamado 
