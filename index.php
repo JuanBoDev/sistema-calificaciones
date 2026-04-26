@@ -24,23 +24,11 @@ $mejorEstudiante   = null;
 $peorEstudiante    = null;
 
 if ($formularioEnviado) {
-    // Procesa los datos del formulario
+    // Procesa los datos del formulario (Módulo 2 - Angélica)
     require_once 'modulos/modulo2_condicionales.php';
-    // Calcula estadísticas generales con bucles
+    // Calcula estadísticas generales con bucles (Módulo 3 - Angélica)
     require_once 'modulos/modulo3_bucles.php';
 }
-
-// DATOS DE PRUEBA — eliminar cuando módulo 2 y 3 estén listos
-$estudiantes = [
-    ["nombre" => "Juan Pérez", "nota1" => 85, "nota2" => 90, "nota3" => 78, "promedio" => 84.33, "escala" => "Bueno", "letra" => "B", "estado" => "Aprobado"],
-    ["nombre" => "María López", "nota1" => 45, "nota2" => 50, "nota3" => 40, "promedio" => 45.0, "escala" => "Reprobado", "letra" => "F", "estado" => "Reprobado"],
-    ["nombre" => "Carlos Ruiz", "nota1" => 95, "nota2" => 98, "nota3" => 92, "promedio" => 95.0, "escala" => "Sobresaliente", "letra" => "A", "estado" => "Aprobado"],
-];
-$promedioGeneral = 74.78;
-$totalAprobados = 2;
-$totalReprobados = 1;
-$mejorEstudiante = $estudiantes[2];
-$peorEstudiante = $estudiantes[1];
 
 ?>
 <!DOCTYPE html>
@@ -80,9 +68,11 @@ $peorEstudiante = $estudiantes[1];
     </header>
 
     <main class="max-w-5xl mx-auto px-4 py-10">
-        <?php if (!$formularioEnviado || (count($estudiantes) === 0 && count($errores) === 0)): ?>
+        <?php if (!$formularioEnviado || empty($estudiantes)): ?>
+            <!-- Mostrar formulario de registro (Módulo 1 - Juan) -->
             <?php require_once 'modulos/modulo1_registro.php'; ?>
         <?php else: ?>
+            <!-- Mostrar reporte de resultados (Módulo 5 - José) -->
             <?php require_once 'modulos/modulo5_reporte.php'; ?>
         <?php endif; ?>
     </main>
