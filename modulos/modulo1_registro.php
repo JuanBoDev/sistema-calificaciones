@@ -26,8 +26,7 @@
     </div>
     <?php endif; ?>
 
-    <form method="POST" action="index.php" class="card-glass rounded-2xl p-6 shadow-xl">
-        <p class="text-gray-400 text-sm mb-6">
+<form method="POST" action="/sistema-calificaciones/index.php" class="card-glass rounded-2xl p-6 shadow-xl">        <p class="text-gray-400 text-sm mb-6">
             Ingresa hasta <span class="text-white font-semibold">10 estudiantes</span>
             con sus 3 calificaciones parciales (0–100).
         </p>
